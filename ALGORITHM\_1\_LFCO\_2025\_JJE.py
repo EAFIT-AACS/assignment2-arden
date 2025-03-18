@@ -17,4 +17,14 @@ def generate_rejected_strings():
     rejected = ["a", "b", "abbb", "aaabb", "aba", "ba", "aab", "bba"]
     return rejected
 
+def main():
+    accepted = generate_accepted_strings()
+    for s in accepted:
+        print(f"'{s}'")
+    
+    rejected = generate_rejected_strings()
+    for s in rejected:
+        print(f"'{s}'")
 
+if _name_ == "_main_":
+    main()
