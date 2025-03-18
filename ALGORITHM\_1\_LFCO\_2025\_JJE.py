@@ -18,13 +18,19 @@ def generate_rejected_strings():
     return rejected
 
 def main():
+    strings_generated = []
+
     accepted = generate_accepted_strings()
     for s in accepted:
         print(f"'{s}'")
-    
+        strings_generated.append(s)
+        
     rejected = generate_rejected_strings()
     for s in rejected:
         print(f"'{s}'")
+        strings_generated.append(s)
+        
+    return strings_generated
 
 if _name_ == "_main_":
     main()
