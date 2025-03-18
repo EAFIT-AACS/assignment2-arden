@@ -8,3 +8,13 @@ def generate_accepted_strings():
         string = "a" * n + "b" * n
         accepted.append(string)
     return accepted
+
+def generate_rejected_strings():
+    """
+    Generates a list of strings that do not belong to the language of grammar G but use the same alphabet {a, b}.
+    """
+    # Some examples of rejected strings (not of the form a^n b^n)
+    rejected = ["a", "b", "abbb", "aaabb", "aba", "ba", "aab", "bba"]
+    return rejected
+
+
