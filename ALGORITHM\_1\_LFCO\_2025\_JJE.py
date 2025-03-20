@@ -7,7 +7,6 @@ def generate_accepted_strings():
     for n in range(7):
         string = "a" * n + "b" * n
         accepted.append(string)
-    accepted.append('ε')
     return accepted
     
 
