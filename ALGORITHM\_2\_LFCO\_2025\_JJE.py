@@ -37,3 +37,23 @@ def run_pda(input_string):
     history.append((position, 'end', stack.copy()))
     accepted = (len(stack) == 0)
     return accepted, history
+
+def main():
+    # Use Algorithm 1's output for the input of this Algorithm 2.
+    test_strings = AL1.main()
+    accepted_strings_pda = []
+    for s in test_strings:
+        accepted, history = run_pda(s)
+        result = "Accepted" if accepted else "Rejected"
+        print(f"Input: '{s}' -> {result}")
+        print("History of configurations:")
+        for config in history:
+            pos, sym, st = config
+            print(f"  Pos {pos}: Symbol: {sym}, Stack: {st}")
+        print("-" * 40)
+        if accepted:
+            accepted_strings_pda.append(s)
+    return accepted_strings_pda
+    
+if __name__ == "__main__":
+    main()
