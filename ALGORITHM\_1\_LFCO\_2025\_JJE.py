@@ -4,10 +4,12 @@ def generate_accepted_strings():
     """
     accepted = []
     # For example, generate strings for n = 0, 1, 2, 3
-    for n in range(4):
+    for n in range(7):
         string = "a" * n + "b" * n
         accepted.append(string)
+    accepted.append('ε')
     return accepted
+    
 
 def generate_rejected_strings():
     """
