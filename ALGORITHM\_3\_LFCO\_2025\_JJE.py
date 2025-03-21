@@ -34,3 +34,15 @@ def leftmost_derivation(string):
     derivation.append(current)
     
     return derivation
+
+def print_derivation_tree(derivation):
+    """
+    Prints the derivation tree with increasing indentation for each derivation step.
+    """
+    if not derivation:
+        print("The string is not in the language.")
+        return
+    indent = ""
+    for step in derivation:
+        print(indent + step)
+        indent += "  "  # Increase indentation for each subsequent step
