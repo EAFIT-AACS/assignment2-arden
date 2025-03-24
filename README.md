@@ -37,3 +37,25 @@ We have implemented three distinct algorithms:
      - For any accepted string of the form \(a^n b^n\), the derivation is constructed starting from the start symbol \(S\) and repeatedly applying the production \(S \rightarrow a \, S \, b\) until \(S\) is replaced by \(\varepsilon\).
      - The output is printed with increasing indentation to clearly display the derivation process.
    - **File:** `ALGORITHM_3_LFCO_2025_JJE.py`
+  
+## Detailed Implementation Overview
+
+### Algorithm 1: String Generation
+- *Functions:*
+  - generate_accepted_strings(): Generates strings of the form \(a^n b^n\) for several values of \(n\).
+  - generate_rejected_strings(): Provides sample strings that do not conform to the pattern \(a^n b^n\).
+- *Main Function:*  
+  Displays both the accepted and rejected strings.
+
+### Algorithm 2: PDA Simulation
+- *Functions:*
+  - run_pda(input_string): Simulates the PDA for the language \(\{a^n b^n\}\). It handles each symbol, updates the stack accordingly, and logs every configuration.
+- *Main Function:*  
+  Tests the PDA on a set of strings, prints whether each string is accepted or rejected, and displays the configuration history.
+
+### Algorithm 3: Leftmost Derivation Tree
+- *Functions:*
+  - leftmost_derivation(string): Constructs the leftmost derivation for an input string using the grammar \(G\).
+  - print_derivation_tree(derivation): Prints the derivation steps with increasing indentation for clarity.
+- *Main Function:*  
+  Processes a set of test strings, printing the derivation tree for those accepted by the grammar.
