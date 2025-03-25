@@ -20,16 +20,25 @@ def generate_rejected_strings():
 
 def main():
     strings_generated = []
+    
+    output_file = "generated_strings.txt"
+    
+    with open(output_file, "w") as file:
+        file.write("Accepted Strings:\n")
+        accepted = generate_accepted_strings()
+        for s in accepted:
+            file.write(f"'{s}'\n")
+            print(f"'{s}'")
+            strings_generated.append(s)
 
-    accepted = generate_accepted_strings()
-    for s in accepted:
-        print(f"'{s}'")
-        strings_generated.append(s)
-        
-    rejected = generate_rejected_strings()
-    for s in rejected:
-        print(f"'{s}'")
-        strings_generated.append(s)
+        file.write("\nRejected Strings:\n")
+        rejected = generate_rejected_strings()
+        for s in rejected:
+            file.write(f"'{s}'\n")
+            print(f"'{s}'")
+            strings_generated.append(s)
+
+    print(f"Output saved in '{output_file}'.")
         
     return strings_generated
 
