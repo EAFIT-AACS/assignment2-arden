@@ -45,13 +45,13 @@ We have implemented three distinct algorithms:
   - generate_accepted_strings(): Generates strings of the form \(a^n b^n\) for several values of \(n\).
   - generate_rejected_strings(): Provides sample strings that do not conform to the pattern \(a^n b^n\).
 - *Main Function:*  
-  Displays both the accepted and rejected strings.
+  Displays both the accepted and rejected strings and save them in a file called "generated_strings.txt"
 
 ### Algorithm 2: PDA Simulation
 - *Functions:*
   - run_pda(input_string): Simulates the PDA for the language \(\{a^n b^n\}\). It handles each symbol, updates the stack accordingly, and logs every configuration.
 - *Main Function:*  
-  Tests the PDA with the strings generated in the previous Algorithm, prints whether each string is accepted or rejected, and displays the configuration history.
+  Tests the PDA with the generated_strings.txt file created in the previous Algorithm, prints whether each string is accepted or rejected, displays the configuration history and save the accepted strings in a file called "accepted_strings.txt" to be used in the next Algorithm. 
 
 ### Algorithm 3: Leftmost Derivation Tree
 - *Functions:*
