@@ -51,11 +51,30 @@ We have implemented three distinct algorithms:
 - *Functions:*
   - run_pda(input_string): Simulates the PDA for the language \(\{a^n b^n\}\). It handles each symbol, updates the stack accordingly, and logs every configuration.
 - *Main Function:*  
-  Tests the PDA on a set of strings, prints whether each string is accepted or rejected, and displays the configuration history.
+  Tests the PDA with the strings generated in the previous Algorithm, prints whether each string is accepted or rejected, and displays the configuration history.
 
 ### Algorithm 3: Leftmost Derivation Tree
 - *Functions:*
   - leftmost_derivation(string): Constructs the leftmost derivation for an input string using the grammar \(G\).
   - print_derivation_tree(derivation): Prints the derivation steps with increasing indentation for clarity.
 - *Main Function:*  
-  Processes a set of test strings, printing the derivation tree for those accepted by the grammar.
+  Processes the accepted strings by the Algorithm 3, printing their derivation tree.
+
+## Running the Implementation
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository_url>
+   cd <repository_directory>
+2. **Run the Desired Algorithm:**
+  (Run ALGORITHM_1)
+   ```bash
+   python3 ALGORITHM_1_LFCO_2025_JJE.py
+   ```
+   (Run ALGORITHM_2)
+   ```bash
+   python3 ALGORITHM_2_LFCO_2025_JJE.py
+   ```
+   (Run ALGORITHM_3)
+   ```bash
+   python3 ALGORITHM_3_LFCO_2025_JJE.py
+   ```
