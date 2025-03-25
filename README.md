@@ -78,3 +78,45 @@ We have implemented three distinct algorithms:
    ```bash
    python3 ALGORITHM_3_LFCO_2025_JJE.py
    ```
+
+## Expected Output Examples
+
+1. *Algorithm 1: String Generation*
+   bash
+      'ab'
+      'aabb'
+      'aaabbb'
+      'aaaabbbb'
+      'aaaaabbbbb'
+      'aaaaaabbbbbb'
+      'a'
+      'b'
+      'abbb'
+      'aaabb'
+      'aba'
+      'ba'
+      'aab'
+      'bba'
+   
+2. *Algorithm 2: PDA Simulation*
+
+For each test string, the output displays:
+
+- Whether the string is accepted or rejected.
+- A history of configurations (position, current symbol, and the current state of the stack).
+
+3. *Algorithm 3: Leftmost Derivation Tree*
+
+For a string like "aabb", the output will display:
+    bash
+    Leftmost derivation for string: 'aabb'
+    S
+      a S b
+        a S b b
+          a ε b b
+    ----------------------------------------
+    
+
+## References
+
+- Kozen, D. C. (1997). Automata and Computability. Springer-Verlag. ISBN: 0387949070. DOI: 10.1007/978-1-4612-1844-9.
