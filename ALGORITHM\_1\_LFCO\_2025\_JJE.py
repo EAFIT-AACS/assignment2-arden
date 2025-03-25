@@ -19,7 +19,6 @@ def generate_rejected_strings():
     return rejected
 
 def main():
-    strings_generated = []
     
     output_file = "generated_strings.txt"
     
@@ -29,18 +28,16 @@ def main():
         for s in accepted:
             file.write(f"'{s}'\n")
             print(f"'{s}'")
-            strings_generated.append(s)
 
         file.write("\nRejected Strings:\n")
         rejected = generate_rejected_strings()
         for s in rejected:
             file.write(f"'{s}'\n")
             print(f"'{s}'")
-            strings_generated.append(s)
 
     print(f"Output saved in '{output_file}'.")
         
-    return strings_generated
+    return None
 
 if _name_ == "_main_":
     main()
