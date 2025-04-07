@@ -77,6 +77,21 @@ In addition to the command-line interface, we have implemented a Flask web serve
 - **Main Function:**  
   Processes the accepted strings from Algorithm 2, printing their derivation trees.
 
+## Prerequisites
+1. **Create a virtual environment:**
+```bash
+python -m env env
+```
+2. **Install flask:**
+```bash
+pip install flask
+```
+3. **Create a requirements.txt file to define the flask version:**
+```bash
+Flask==2.1.2
+```
+
+
 ## Running the Implementation
 
 1. **Clone the Repository:**
